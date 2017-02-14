@@ -65,17 +65,15 @@
 		var last = new Date(rec.date);
 		var now = new Date( );
 
-		var LowThresh = parseFloat("4");	// Set low/med/high thresholds here.
-		var MedThresh = parseFloat("10");	// Below Low will be red; between Low & Med
-		var HighThresh = parseFloat("15");	// is green; between Med & High is yellow;
+		var LowThresh = parseFloat("80");	// Set low/med/high thresholds here.
+		var MedThresh = parseFloat("150");	// Below Low will be red; between Low & Med
+		var HighThresh = parseFloat("180");	// is green; between Med & High is yellow;
 											// above High is red.
 
 		if (window.serverSettings.settings.units == 'mmol') {
 		rec.sgv = Nightscout.units.mgdlToMMOL(rec.sgv);
 		}
 		var bgNum = parseFloat(rec.sgv);
-	    
-	    	window.alert(bgNum);
 
 		var red = 'rgba(213,9,21,1)';		// These are the particular shades of 
 		var yellow = 'rgba(233,205,53,1)';	// red, yellow, and green. Tweak if you like.
