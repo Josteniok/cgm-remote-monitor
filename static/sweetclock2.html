@@ -43,10 +43,13 @@
       margin: 0 0;
       padding: 0; */
     }                     
-    .inner {
+/*    .inner {
       width: 100%;
       -webkit-transform: translateY(-5%);
-    }
+  }*/
+  .bgnow, .bgdelta, .arrow {
+  flex: 1 100%;
+  }
   .bgnow {
   order: 1;
       font-family: 'Open Sans';
@@ -76,12 +79,10 @@
 <body>
 
  <main>
-    <div class="inner">
-    <div class="bgnow"></div>
+       <div class="bgnow"></div>
     <div class="arrow"><img id="arrow" src=""/></div>
     <div class="bgdelta"></div>
-    </div>
-</main>
+   </main>
 
   <script src="/bower_components/jquery/dist/jquery.min.js"></script>
   <script src="/api/v1/status.js"></script>
