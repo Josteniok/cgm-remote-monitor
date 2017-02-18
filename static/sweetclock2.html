@@ -27,7 +27,7 @@
     overflow: hidden;
     color: white;
     }
-    main {
+    /* main {
       display: -webkit-box;     // Lots of vertical centering redundancy here
     display: -ms-flexbox;     // to accommodate different/old browsers.
     display: -webkit-flex;
@@ -38,27 +38,42 @@
   -webkit-align-items: center;
   -webkit-flex-flow: row wrap;
   flex-flow: row wrap;
-    }                     
+    }  */                   
   .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  }
+
+  .wrapper > * {
   padding: 10px;
   flex: 1 100%;
   }
+  
   .bgnow {
       font-family: 'Open Sans';
       font-weight: 700;
       font-size: 40vmin;
-    }
+  }
+  
   .bgdelta {
       font-family: 'Open Sans';
       font-weight: 700;
       font-size: 15vmin;
-    }
+  }
+  
   .arrow {
 
-    }
-    img#arrow {
+  }
+  
+  img#arrow {
       width: 40vmin;
-    }
+  }
+  
     .stale {
       color: black;
       background-color: grey;
