@@ -35,12 +35,13 @@
     -webkit-box-align: center;
     -webkit-flex-align: center;
     -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
+  -webkit-align-items: center;
+  flex-flow: row wrap;
+    /* align-items: center;
       height: 100vh;
       width: 100%;
       margin: 0 0;
-      padding: 0;
+      padding: 0; */
     }                     
     .inner {
       width: 100%;
@@ -71,13 +72,14 @@
     .stale {
       color: black;
       background-color: grey;
-    }
+  }
+  @media all
   </style>
 </head>
 
 <body>
 
-  <main>
+<!--  <main>
     <div class="inner">
     <div class="bgnow"></div>
     </div>
@@ -85,7 +87,13 @@
     <div class="arrow"><img id="arrow" src=""/></div>
     <div class="bgdelta"></div>
     </div>
-  </main>
+</main> -->
+
+<ul class="main">
+  <li class="bgnow"></li>
+  <li class="arrow"><img id="arrow" src=""/></li>
+  <li class="bgdelta"></li>
+</ul>
   
   <script src="/bower_components/jquery/dist/jquery.min.js"></script>
   <script src="/api/v1/status.js"></script>
