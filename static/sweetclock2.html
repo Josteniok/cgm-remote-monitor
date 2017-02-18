@@ -50,19 +50,22 @@
     .secondrow {
       width: 100%;
     }
-    .bgnow {
+  .bgnow {
+  order: 1;
       font-family: 'Open Sans';
       font-weight: 700;
       font-size: 40vmin;
     }
-    .bgdelta {
+  .bgdelta {
+  order: 3;
       width: 48%;
       align-self: flex-end;
       font-family: 'Open Sans';
       font-weight: 700;
       font-size: 15vmin;
     }
-    .arrow {
+  .arrow {
+  order: 2;
       width: 48%;
       align-self: flex-start;
     }
@@ -79,7 +82,7 @@
 
 <body>
 
-<!--  <main>
+ <main>
     <div class="inner">
     <div class="bgnow"></div>
     </div>
@@ -87,14 +90,8 @@
     <div class="arrow"><img id="arrow" src=""/></div>
     <div class="bgdelta"></div>
     </div>
-</main> -->
+</main>
 
-<ul class="main">
-  <li class="bgnow"></li>
-  <li class="arrow"><img id="arrow" src=""/></li>
-  <li class="bgdelta"></li>
-</ul>
-  
   <script src="/bower_components/jquery/dist/jquery.min.js"></script>
   <script src="/api/v1/status.js"></script>
   <script src="/public/js/bundle.js"></script>
