@@ -88,12 +88,18 @@
     function query ( ) {
       console.log('query');
       // $.ajax('/api/v1/entries/current.json', { success: render });
+      //
+      // Entries API doesn't have bgdelta, trying pebble instead.
+      //
       $.ajax('/pebble', { success: render });
     }
 
     function render (xhr) {
     console.log('xhr', xhr);
     // var rec = xhr[0];
+    //
+    // After switching to pebble interface, need to reference the bgs array
+    //
     var rec = xhr.bgs[0];
     var last = new Date(rec.date);
     var now = new Date( );
