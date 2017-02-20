@@ -21,7 +21,6 @@
   @import url("//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800");
   
   body {
-    text-align: center;
     margin: 0 0;
     padding: 0;
     overflow: hidden;
@@ -35,8 +34,6 @@
   display: flex;
   -webkit-flex-flow: row wrap;
   flex-flow: row wrap;
-  -webkit-flex-direction: row;
-  flex-direction: row;
   }
 
   .wrapper > * {
@@ -45,6 +42,7 @@
   }
   
   .bgnow {
+  text-align: center;
   font-family: 'Open Sans';
   font-weight: 700;
   font-size: 40vmin;
@@ -54,16 +52,15 @@
   font-family: 'Open Sans';
   font-weight: 700;
   font-size: 15vmin;
-  align-items: flex-start;
+  text-align: left;
   }
 
   .arrow {
-  //  flex: 1 auto;
+  text-align: right;
   }
   
   img#arrow {
   width: 40vmin;
-  align-items: flex-end;
   }
   
   .stale {
@@ -75,13 +72,12 @@
 
 <body>
 
-  <main>
-    <div class="bgnow"></div>
-    <div class="wrapper">
-      <div class="arrow"><img id="arrow" src=""/></div>
-      <div class="bgdelta"></div>
-    </div>
-   </main>
+
+  <div class="bgnow"></div>
+  <div class="wrapper">
+    <div class="arrow"><img id="arrow" src=""/></div>
+    <div class="bgdelta"></div>
+  </div>
 
   <script src="/bower_components/jquery/dist/jquery.min.js"></script>
   <script src="/api/v1/status.js"></script>
