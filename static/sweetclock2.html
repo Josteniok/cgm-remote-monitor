@@ -40,6 +40,9 @@
   padding: 10px;
   flex: 1 auto;
   }
+
+  .innerwrapper {
+  }
   
   .bgnow {
   text-align: center;
@@ -70,14 +73,12 @@
 
   @media all and (orientation: landscape) {
   .bgnow { width: 49%; }
-  .arrow {
-  text-align: center;
+  .innerwrapper {
+  display: flex;
   flex-flow: column wrap;
   }
-  .bgdelta {
-  text-align: center;
-  flex-flow: column wrap;
-  }
+  .arrow { text-align: center; }
+  .bgdelta { text-align: center; }
   .wrapper {
   display: inline-flex;
   flex: auto;
@@ -94,10 +95,12 @@
 
   <div class="bgnow"></div>
   <div class="wrapper">
-    <div class="arrow"><img id="arrow" src=""/></div>
-    <div class="bgdelta"></div>
+    <div class="innerwrapper">
+      <div class="arrow"><img id="arrow" src=""/></div>
+      <div class="bgdelta"></div>
+    </div>
   </div>
-
+  
   <script src="/bower_components/jquery/dist/jquery.min.js"></script>
   <script src="/api/v1/status.js"></script>
   <script src="/public/js/bundle.js"></script>
