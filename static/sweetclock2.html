@@ -31,7 +31,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
-  display: flex;
+  display: inline-flex;
   -webkit-flex-flow: row wrap;
   flex-flow: row wrap;
   }
@@ -41,14 +41,12 @@
   flex: 1 auto;
   }
 
-  .innerwrapper {
-  }
-  
   .bgnow {
   text-align: center;
   font-family: 'Open Sans';
   font-weight: 700;
   font-size: 40vmin;
+  display: flex;
   }
   
   .bgdelta {
@@ -72,14 +70,8 @@
   }
 
   @media all and (orientation: landscape) {
-  .bgnow {
-  width: 40%;
-  }
   .arrow { text-align: center; }
   .bgdelta { text-align: center; }
-  .wrapper {
-  flex: inline-flex;
-  }
   }
 
   @media all and (orientation: portrait) {
