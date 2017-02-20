@@ -74,18 +74,11 @@
   @media all and (orientation: landscape) {
   .bgnow {
   width: 40%;
-  overflow: hidden;
-  }
-  .innerwrapper {
-  display: flex;
-  flex-flow: column nowrap;
   }
   .arrow { text-align: center; }
   .bgdelta { text-align: center; }
   .wrapper {
-  display: block;
-  width: 49%;
-  overflow: hidden;
+  flex: inline-flex;
   }
   }
 
@@ -98,11 +91,9 @@
 
 
   <div class="bgnow"></div>
-  <div class="wrapper">
-    <div class="innerwrapper">
-      <div class="arrow"><img id="arrow" src=""/></div>
-      <div class="bgdelta"></div>
-    </div>
+  <div class="innerwrapper">
+    <div class="arrow"><img id="arrow" src=""/></div>
+    <div class="bgdelta"></div>
   </div>
   
   <script src="/bower_components/jquery/dist/jquery.min.js"></script>
