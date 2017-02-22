@@ -49,7 +49,6 @@
   font-family: 'Open Sans';
   font-weight: 700;
   font-size: 40vmin;
-  align-self: stretch;
   }
   
   .bgdelta {
@@ -79,7 +78,10 @@
   align-items: center;
   text-align: center;
   }
-  .bgnow { display: inline-flex; }
+  .bgnow {
+  display: inline-flex;
+  flex-flow: row wrap;
+  }
   .wrapper {
   flex-flow: column nowrap;
   justify-content: stretch;
