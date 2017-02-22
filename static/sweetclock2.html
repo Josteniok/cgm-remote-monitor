@@ -29,9 +29,6 @@
   }
 
   main {
-  display: flex;
-  height: 100vh;
-  align-items: center;
   }
 
   .wrapper {
@@ -52,7 +49,6 @@
   font-family: 'Open Sans';
   font-weight: 700;
   font-size: 40vmin;
-//  display: flex;
   }
   
   .bgdelta {
@@ -76,6 +72,11 @@
   }
 
   @media all and (orientation: landscape) {
+  main {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  }
   .bgnow { display: inline-flex; }
   .wrapper {
   flex-flow: column nowrap;
