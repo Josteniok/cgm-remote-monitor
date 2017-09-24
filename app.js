@@ -74,15 +74,16 @@ function create(env, ctx) {
         "/report":"reportindex.html",
         "/translations":"translationsindex.html",
         "/clock.html":"clock.html"
+          "/sweetclock2.html":"sweetclock2.html"
     };
 
-	Object.keys(appPages).forEach(function(page) {
-	        app.get(page, (req, res) => {
+  Object.keys(appPages).forEach(function(page) {
+          app.get(page, (req, res) => {
             res.render(appPages[page], {
                 locals: app.locals
             });
         });
-	});
+  });
 
     app.get("/nightscout.appcache", (req, res) => {
         res.render("nightscout.appcache", {
