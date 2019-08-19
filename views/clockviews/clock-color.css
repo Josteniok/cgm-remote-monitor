@@ -42,6 +42,11 @@ main {
   font-size: 40vmin;
 }
 
+#bgdelta {
+  font-weight: 700;
+  font-size: 15vmin;
+}
+
 #trend {
   display: -ms-flexbox;
   display: -webkit-flex;
