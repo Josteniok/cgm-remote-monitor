@@ -1,24 +1,24 @@
-# fly.toml file generated for curleesite on 2022-09-09T21:02:32-07:00
+# fly.toml file generated for curleesite on 2023-03-30T08:47:13-07:00
 
 app = "curleesite"
 kill_signal = "SIGINT"
 kill_timeout = 5
+primary_region = "lax"
+processes = []
 
 [env]
+DISPLAY_UNITS="mg/dl"
+BRIDGE_SERVER="US"
+BG_HIGH=700
+ENABLE="careportal bridge rawbg"
 
 [experimental]
   allowed_public_ports = []
   auto_rollback = true
-  cmd = []
-  entrypoint = []
-  exec = []
-
-[processes]
-  app = "node lib/server/server.js"
 
 [[services]]
   http_checks = []
-  internal_port = 8080
+  internal_port = 1337
   processes = ["app"]
   protocol = "tcp"
   script_checks = []
