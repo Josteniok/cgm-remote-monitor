@@ -34,6 +34,3 @@ npm-debug.log
 # directories created by docker-compose.yml
 mongo-data/
 letsencrypt/
-
-# don't sync the fly toml file
-fly.toml
